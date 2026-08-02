@@ -1,3 +1,15 @@
 theme: jekyll-theme-minimal
 title: Eason Clark's blog
 description: A place for online files storage, created by Stephen Hao. 
+defaults:
+  - scope:
+      path: ""          # 作用于所有文件
+      type: "posts"     # 仅作用于 posts
+    values:
+      layout: "post"    # 默认使用 post 布局
+      author: "你的名字"
+  - scope:
+      path: "projects"  # 仅作用于 projects 文件夹下的文件
+      type: "pages"
+    values:
+      layout: "project" # 使用 project 布局
